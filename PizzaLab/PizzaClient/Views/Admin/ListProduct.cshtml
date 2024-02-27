@@ -1,0 +1,137 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "ProductList";
+}
+
+<div class="container mt-5">
+    <div class="row tm-content-row">
+        <div class="row mb-3">
+            <form action="ListProduct" method="get">
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label>Category</label>
+                        <select name="id" class="form-control selected" style="margin: 0; padding: 0px 0px 0px 10px; border: 1px solid #ABADB3;">
+                            <option value=""></option>
+                            @foreach (var cate in ViewBag.categories)
+                            {
+                                if (ViewBag.CateId != null && ViewBag.CateId == cate.Id)
+                                {
+                                    <option value="@cate.Id" selected>@cate.CategoryName</option>
+                                }
+                                else
+                                {
+                                    <option value="@cate.Id">@cate.CategoryName</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" value="@ViewBag.Name" style="border: 1px solid #ABADB3;" />
+                    </div>
+                    <div class="col-2">
+                        <label>Price</label>
+                        <input id="input-price" type="number" class="form-control" name="price" value="@ViewBag.Price" style="border: 1px solid #ABADB3;" />
+                        <span class="error text-danger" id="error-message-price"></span>
+                    </div>
+                    <div class="col-2">
+                        <label>Weight</label>
+                        <input id="input-weight" type="number" class="form-control" name="Weight" value="@ViewBag.Weight" style="border: 1px solid #ABADB3;" />
+                        <span class="error text-danger" id="error-message-weight"></span>
+                    </div>
+                    <div class="col-2 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary btn-block text-uppercase">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 tm-block-col">
+            <div class="tm-bg-primary-dark tm-block tm-block-products">
+                <div class="tm-product-table-container">
+                    <table class="table table-hover tm-table-small tm-product-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">PRODUCT NAME</th>
+                                <th scope="col">DESCRIPTION</th>
+                                <th scope="col">PRICE</th>
+                                <th scope="col">WEIGHT</th>
+                                <th scope="col">AMMOUNT</th>
+                                <th scope="col">&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var pro in ViewBag.products)
+                            {
+                                <tr>
+                                    <td class="tm-product-name"><a href="/Admin/EditProductForm/@pro.Id">@pro.Name</a></td>
+                                    <td>@pro.Description</td>
+                                    <td>@pro.Price</td>
+                                    <td>@pro.Weight</td>
+                                    <td>@pro.Ammount</td>
+                                    <td>
+                                        <a href="/Admin/DeleteProduct/@pro.Id" class="tm-product-delete-link">
+                                            <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- table container -->
+                <a href="/Admin/AddProductForm"
+                   class="btn btn-primary btn-block text-uppercase mb-3">Add new product</a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
+            <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
+                <h2 class="tm-block-title">Product Categories</h2>
+                <div class="tm-product-table-container">
+                    <table class="table tm-table-small tm-product-table">
+                        <tbody>
+                            @foreach (var cate in ViewBag.categories)
+                            {
+                                <tr>
+                                    @if (ViewBag.CateId != null && ViewBag.CateId == cate.Id)
+                                    {
+                                        <td class="tm-product-name active">@cate.CategoryName</td>
+                                    }
+                                    else
+                                    {
+                                        <td class="tm-product-name">@cate.CategoryName</td>
+                                    }
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- table container -->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        function validateNumber(input, name) {
+            var value = $(input).val();
+            var isInteger = /^\d+$/.test(value);
+
+            if (!isInteger || parseInt(value) < 0) {
+                $("#error-message-" + name).text("Please enter a valid positive integer.");
+                return false;
+            } else {
+                $("#error-message-" + name).text("");
+                return true;
+            }
+        }
+
+        $("#input-price").on("change", function () {
+            validateNumber(this, "price");
+        });
+
+        $("#input-weight").on("change", function () {
+            validateNumber(this, "weight");
+        });
+    })
+</script>

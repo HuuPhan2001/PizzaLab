@@ -1,0 +1,127 @@
+﻿@using PizzaLabApi.Models;
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Order Edit";
+	OrderDTO order = ViewBag.orders;
+}
+
+<div class="container tm-mt-big tm-mb-big">
+	<div class="row">
+		<div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+			<div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="tm-block-title d-inline-block">Edit Order</h2>
+					</div>
+				</div>
+				<div class="row tm-edit-product-row">
+					<div class="col-xl-6 col-lg-6 col-md-12">
+						<form action="../UpdateOrder" method="post" class="tm-edit-product-form">
+							<div class="form-group mb-3">
+								<input id="Id"
+									   name="Id"
+									   type="hidden"
+									   value="@order.Id"
+									   class="form-control validate" />
+								<label for="UserId">User</label>
+								<select class="custom-select tm-select-accounts"
+										id="UserId"
+										name="UserId">
+									@foreach (var item in ViewBag.users)
+									{
+										if (order.UserId == item.Id)
+										{
+											<option value="@item.Id" selected>@item.ContactName</option>
+										}
+										else
+										{
+											<option value="@item.Id">@item.ContactName</option>
+										}
+									}
+								</select>
+							</div>
+							<div class="form-group mb-3">
+								<label for="OrderDate">Order Date</label>
+								<input class="form-control validate"
+									   name="OrderDate"
+									   type="date"
+									   value="@order.OrderDate.ToString("yyyy-MM-dd")"
+									   required />
+							</div>
+							<div class="form-group mb-3">
+								<label for="RequiredDate">Required Date</label>
+								<input class="form-control validate"
+									   name="RequiredDate"
+									   type="date"
+									   value="@order.RequiredDate.Value.ToString("yyyy-MM-dd")"
+									   required />
+							</div>
+							<div class="form-group mb-3">
+								<label for="ShippedDate">Shipped Date</label>
+								<input class="form-control validate"
+									   name="ShippedDate"
+									   type="date"
+									   value="@order.ShippedDate.Value.ToString("yyyy-MM-dd")"
+									   required />
+							</div>
+							<div class="form-group mb-3 col-xs-12 col-sm-6">
+								<label for="Freight">
+									Freight
+								</label>
+								<input id="Freight"
+									   name="Freight"
+									   type="text"
+									   value="@order.Freight"
+									   class="form-control validate"
+									   required />
+							</div>
+							<div class="form-group mb-3 col-xs-12 col-sm-6">
+								<label for="ShipAddress">
+									Ship Address
+								</label>
+								<input id="ShipAddress"
+									   name="ShipAddress"
+									   type="text"
+									   value="@order.ShipAddress"
+									   class="form-control validate"
+									   required />
+							</div>
+							<div class="form-group mb-3 col-xs-12 col-sm-6">
+								<label for="Status">
+									Status
+								</label>
+								<select class="custom-select tm-select-accounts"
+										id="Status"
+										name="Status">
+									@if (order.Status == true)
+									{
+										<option value="true" selected>Done</option>
+										<option value="false">Moving</option>
+									}
+									else
+									{
+										<option value="true">Done</option>
+										<option value="false" selected>Moving</option>
+									}
+
+
+
+								</select>
+
+								<input id="isCart"
+									   name="isCart"
+									   type="checkbox"
+									   checked="checked"
+									   hidden
+									   value="False" />
+							</div>
+							<div class="col-12">
+								<button type="submit" class="btn btn-primary btn-block text-uppercase">Update Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

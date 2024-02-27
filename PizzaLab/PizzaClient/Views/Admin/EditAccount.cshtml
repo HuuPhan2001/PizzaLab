@@ -1,0 +1,86 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Dashboard";
+}
+
+<div class="container mt-5">
+    <div class="row tm-content-row">
+        <div class="col-12 tm-block-col">
+            <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+                <h2 class="tm-block-title">List of Accounts</h2>
+                <p class="text-white">Accounts</p>
+                <select class="custom-select">
+                    @foreach (var role in ViewBag.Role)
+                    {
+                        <option value="@role.Id">@role.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- row -->
+    <div class="row tm-content-row">
+        <div class="tm-block-col tm-col-account-settings">
+            <div class="tm-bg-primary-dark tm-block tm-block-settings">
+                <h2 class="tm-block-title">Account Settings</h2>
+                <form action="EditAccount" class="tm-signup-form row">
+                    <div class="form-group col-lg-6">
+                        <label for="FirstName">First Name</label>
+                        <input id="FirstName"
+                               name="FirstName"
+                               type="text"
+                               class="form-control validate" />
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="LastName">Last Name</label>
+                        <input id="LastName"
+                               name="LastName"
+                               type="text"
+                               class="form-control validate" />
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="ContactName">Contact Name</label>
+                        <input id="ContactName"
+                               name="ContactName"
+                               type="text"
+                               class="form-control validate" />
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="Email">Email</label>
+                        <input id="Email"
+                               name="Email"
+                               type="email"
+                               class="form-control validate" />
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="password">Password</label>
+                        <input id="password"
+                               name="Password"
+                               type="password"
+                               class="form-control validate" />
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="phone">Phone</label>
+                        <input id="phone"
+                               name="Phone"
+                               type="tel"
+                               class="form-control validate" />
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="tm-hide-sm">&nbsp;</label>
+                        <button type="submit" asp-action="EditAccount"
+                                class="btn btn-primary btn-block text-uppercase">
+                            Update Your Profile
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" asp-action="DeleteAccount"
+                                class="btn btn-primary btn-block text-uppercase">
+                            Delete Your Account
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

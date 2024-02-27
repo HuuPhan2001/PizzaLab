@@ -1,0 +1,111 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Product Edit";
+}
+
+<div class="container tm-mt-big tm-mb-big">
+	<div class="row">
+		<div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+			<div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="tm-block-title d-inline-block">Edit Product</h2>
+					</div>
+				</div>
+				<div class="row tm-edit-product-row">
+					<div class="col-xl-6 col-lg-6 col-md-12">
+						<form action="../EditProduct" method="post" class="tm-edit-product-form">
+							<div class="form-group mb-3">
+								<input id="id"
+									   name="id"
+									   type="hidden"
+									   value="@ViewBag.products.Id"/>
+								<label for="name">
+									Product Name
+								</label>
+								<input id="name"
+									   name="name"
+									   type="text"
+									   value="@ViewBag.products.Name"
+									   class="form-control validate" />
+							</div>
+							<div class="form-group mb-3">
+								<label for="Description">Description</label>
+								<textarea class="form-control validate tm-small"
+										  rows="5"
+										  name="Description"
+										  required>@ViewBag.products.Description</textarea>
+							</div>
+							<div class="row">
+								<div class="form-group mb-3 col-xs-12 col-sm-6">
+									<label for="Price">
+										Price
+									</label>
+									<input id="Price"
+										   name="Price"
+										   type="text"
+										   value="@ViewBag.products.Price"
+										   class="form-control validate" />
+								</div>
+								<div class="form-group mb-3 col-xs-12 col-sm-6">
+									<label for="Weight">
+										Weight
+									</label>
+									<input id="Weight"
+										   name="Weight"
+										   type="text"
+										   value="@ViewBag.products.Weight"
+										   class="form-control validate" />
+								</div>
+							</div>
+							<div class="form-group mb-3">
+								<label for="CategoryId">Category</label>
+								<select class="custom-select tm-select-accounts"
+										id="CategoryId"
+										name="CategoryId">
+									@foreach (var item in ViewBag.categories)
+									{
+										if (ViewBag.products.CategoryId == item.Id)
+										{
+											<option value="@item.Id" selected>@item.CategoryName</option>
+										}
+										else
+										{
+											<option value="@item.Id">@item.CategoryName</option>
+										}
+									}
+								</select>
+							</div>
+							<div class="row">
+								<div class="form-group mb-3 col-xs-12 col-sm-6">
+									<label for="Ammount">
+										Ammount
+									</label>
+									<input id="Ammount"
+										   name="Ammount"
+										   type="text"
+										   value="@ViewBag.products.Ammount"
+										   class="form-control validate" />
+
+									<label for="Image">
+										Image Address
+									</label>
+									<input type="text"
+										   id="Image"
+										   name="Image"
+										   class="form-control validate"
+										   value="@ViewBag.products.Image" />
+
+								</div>
+							</div>
+
+							<div class="col-12">
+								<button type="submit" class="btn btn-primary btn-block text-uppercase">Update Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,143 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PizzaClient
+build_property.RootNamespace = PizzaClient
+build_property.ProjectDir = C:\Users\BasHuw\Desktop\PizzaLab\PRN231_Project\PizzaLab\PizzaClient\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\BasHuw\Desktop\PizzaLab\PRN231_Project\PizzaLab\PizzaClient
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/Account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/AddDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/AddOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/AddProductForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvZHVjdEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/DashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaEJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/DeleteDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/DeleteProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/EditAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/EditOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/EditProductForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFByb2R1Y3RGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/ListDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/ListProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Admin/UpdateDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/OrderDetail/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Order/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Order/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Order/OrderPersonal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJQZXJzb25hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Product/Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Product/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxSZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Shared/_CookieConsentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db29raWVDb25zZW50UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/User/AdminUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZG1pblVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/User/SignOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaWduT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BasHuw/Desktop/PizzaLab/PRN231_Project/PizzaLab/PizzaClient/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xle2tma8ej
